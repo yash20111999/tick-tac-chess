@@ -51,19 +51,19 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   lightCell: {
-    backgroundColor: "#F0D9B5",
+    backgroundColor: "#EEEED2",
   },
   darkCell: {
-    backgroundColor: "#B58863",
+    backgroundColor: "#769656",
   },
   selectedCell: {
     borderWidth: 4,
-    borderColor: "rgba(255, 215, 0, 0.7)",
+    borderColor: "#F6F669",
   },
   validMove: {
     width: 20,
     height: 20,
     borderRadius: 10,
-    backgroundColor: "rgba(255, 215, 0, 0.5)",
+    backgroundColor: "rgba(60, 77, 33, 0.35)",
   },
 });

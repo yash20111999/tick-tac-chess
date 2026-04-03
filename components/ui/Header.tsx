@@ -42,17 +42,19 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "white",
+    color: "#EEEED2",
     textAlign: "center",
   },
   rulesButton: {
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
+    backgroundColor: "rgba(118, 150, 86, 0.22)",
     paddingVertical: 8,
     paddingHorizontal: 12,
     borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "rgba(238, 238, 210, 0.12)",
   },
   rulesButtonText: {
-    color: "white",
+    color: "#EEEED2",
     fontSize: 14,
     fontWeight: "600",
   },

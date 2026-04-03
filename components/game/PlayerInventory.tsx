@@ -19,7 +19,7 @@ export default function PlayerInventory({ player }: { player: Player }) {
 
   return (
     <View style={[styles.container, !isActive && styles.inactive]}>
-      <Text style={styles.title}>Player {player}'s Inventory</Text>
+      <Text style={styles.title}>{`Player ${player}'s Inventory`}</Text>
       <View style={styles.row}>
         {(Object.keys(playerInventory) as PieceType[]).map((type) => {
           const count = playerInventory[type];
@@ -47,16 +47,16 @@ export default function PlayerInventory({ player }: { player: Player }) {
 const styles = StyleSheet.create({
   container: {
     padding: 12,
-    backgroundColor: "rgba(255, 255, 255, 0.05)",
+    backgroundColor: "rgba(18, 23, 16, 0.52)",
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: "rgba(255, 255, 255, 0.1)",
+    borderColor: "rgba(238, 238, 210, 0.12)",
   },
   inactive: {
     opacity: 0.5,
   },
   title: {
-    color: "#fff",
+    color: "#EEEED2",
     fontSize: 16,
     fontWeight: "600",
     textAlign: "center",
@@ -70,18 +70,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 8,
     borderRadius: 8,
-    backgroundColor: "rgba(0,0,0,0.2)",
+    backgroundColor: "rgba(118, 150, 86, 0.22)",
   },
   selected: {
-    backgroundColor: "rgba(255, 215, 0, 0.4)",
-    boxShadowColor: "#FFD700",
-    boxShadowOffset: { width: 0, height: 0 },
-    boxShadowOpacity: 0.8,
-    boxShadowRadius: 10,
+    backgroundColor: "rgba(246, 246, 105, 0.28)",
+    shadowColor: "#F6F669",
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
     elevation: 5,
   },
   count: {
-    color: "#fff",
+    color: "#EEEED2",
     fontSize: 14,
     fontWeight: "500",
     marginTop: 4,

@@ -12,7 +12,8 @@ export default function HomeScreen() {
 
   return (
     <LinearGradient
-      colors={["#121212", "#1A1A1A", "#121212"]}
+      colors={["#1F241C", "#2C3327", "#3A4630"]}
+      locations={[0, 0.45, 1]}
       style={styles.background}
     >
       <SafeAreaView style={styles.container}>
@@ -27,7 +28,9 @@ export default function HomeScreen() {
           </View>
         </View>
         <Scoreboard />
-        <Text style={styles.turnIndicator}>Player {currentPlayer}'s Turn</Text>
+        <Text
+          style={styles.turnIndicator}
+        >{`Player ${currentPlayer}'s Turn`}</Text>
 
         <WinnerOverlay />
       </SafeAreaView>
@@ -58,7 +61,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 22,
     fontWeight: "bold",
-    color: "white",
+    color: "#F2F1E8",
     paddingBottom: 10,
+    textShadowColor: "rgba(0, 0, 0, 0.28)",
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 3,
   },
 });

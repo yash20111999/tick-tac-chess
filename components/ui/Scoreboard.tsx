@@ -25,19 +25,21 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingVertical: 10,
     paddingHorizontal: 20,
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    backgroundColor: "rgba(18, 23, 16, 0.45)",
+    borderTopWidth: 1,
+    borderTopColor: "rgba(238, 238, 210, 0.08)",
   },
   scoreContainer: {
     alignItems: "center",
   },
   playerLabel: {
     fontSize: 16,
-    color: "#ccc",
+    color: "#B9C6A2",
     marginBottom: 4,
   },
   score: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "white",
+    color: "#EEEED2",
   },
 });
